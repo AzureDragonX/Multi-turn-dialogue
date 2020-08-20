@@ -15,5 +15,5 @@
 
 #### 5. 总体流程
 总体流程结构图如下：
-![pipeline](images/pic3.png)
+> ![pipeline](images/pic3.png)
 
