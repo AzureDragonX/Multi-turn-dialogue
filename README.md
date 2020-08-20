@@ -58,7 +58,7 @@
 
   > 具体请看流程图。
   >
-  > ![](images/pic2.png)
+  > ![流程图](images/pic2.png)
 
 - 最终结果
 
