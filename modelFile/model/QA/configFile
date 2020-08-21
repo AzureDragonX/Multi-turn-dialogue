@@ -1,0 +1,18 @@
+{
+    "numChars": 1524,
+    "charDim": 100,
+    "numTags": 17,
+    "segDim": 20,
+    "lstmDim": 100,
+    "batchSize": 8.0,
+    "embFile": "dependence/wiki_100.utf8",
+    "clip": 5.0,
+    "dropoutKeep": 0.5,
+    "optimizer": "ADAM",
+    "learningRate": 0.001,
+    "tagSchema": "iobes",
+    "preEmb": true,
+    "zeros": false,
+    "lower": true,
+    "epoch": 50
+}
