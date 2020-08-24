@@ -1,3 +1,6 @@
+from .validator import Validator
+
+
 def Dispatcher(sicks:list, slots:dict, flag:bool = False):
     '''
     名称： 调度器
@@ -11,7 +14,7 @@ def Dispatcher(sicks:list, slots:dict, flag:bool = False):
             if flag:
                 break
         
-    if  not flag:
+    if  flag:
         print('根据您的描述，暂时无法确认您的疾病，建议您前往附近的医院做进一步检查')    
 
 if __name__ == "__main__":
