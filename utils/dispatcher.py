@@ -1,4 +1,4 @@
-def Dispatcher(sicks:list, flag:bool = False):
+def Dispatcher(sicks:list, slots:dict, flag:bool = False):
     '''
     名称： 调度器
     作用： 管理待筛疾病，将其有序分发给具体的疾病确认器
