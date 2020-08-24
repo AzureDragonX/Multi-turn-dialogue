@@ -26,7 +26,7 @@ def main():
         SLOTS[symptom] = True
 
     SICKS = Classifier(symptoms)
-    if sicks == []:
+    if SICKS == []:
         print('根据您的描述，暂时无法确认您的疾病，建议您前往附近的医院做进一步检查')
         print('感谢您的使用，再见')
         return 0
