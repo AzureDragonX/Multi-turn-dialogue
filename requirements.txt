@@ -1,0 +1,30 @@
+absl-py==0.9.0
+afw-util @ file:///E:/Python/afw_util-0.3-py3-none-any.whl
+astor==0.8.1
+certifi==2020.6.20
+fsspec==0.8.0
+gast==0.4.0
+google-pasta==0.2.0
+grpcio==1.31.0
+h5py==2.10.0
+ie @ file:///E:/Python/ie-0.0.1-py3-none-any.whl
+importlib-metadata==1.7.0
+jieba==0.42.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+Markdown==3.2.2
+numpy==1.19.1
+pandas==1.1.0
+protobuf==3.13.0
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.15.0
+tensorboard==1.14.0
+tensorflow==1.14.0
+tensorflow-estimator==1.14.0
+termcolor==1.1.0
+Werkzeug==1.0.1
+wincertstore==0.2
+wrapt==1.12.1
+xlrd==1.2.0
+zipp==3.1.0
