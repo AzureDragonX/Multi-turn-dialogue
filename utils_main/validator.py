@@ -121,7 +121,7 @@ def Validator(sick: str, slots: dict, flag: bool = False):
             print('请问您有腹痛症状吗？')
             answer = input()
             if answer in affirm:
-                slot['腹痛'] = True
+                slots['腹痛'] = True
                 slot3['腹痛'] = True
             else:
                 return 0

@@ -202,6 +202,11 @@ class Matcher(object):
 
 
 def return_symptom_list(symptoms):
+    '''
+    接收来自NER的实体DataFrame，并返回对齐后的症状列表。
+    :param symptoms: 实体DataFrame，由BilstmCrf.one_line得到
+    :return:对齐后的症状列表
+    '''
     df = pd.read_excel('entity_alignment.xlsx')
     return_list = []
     for i in zip(symptoms['word']):
