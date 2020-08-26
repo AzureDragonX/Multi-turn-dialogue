@@ -14,7 +14,7 @@ def main():
     通过多轮问答形式，返回最后输出
     '''
     print('您好，很高兴为您服务')
-    print('能向我描述您的症状吗？最好提供三个或三个的症状哦')
+    print('能向我描述您的症状吗？最好提供三个或三个以上的症状哦')
     user_input = input()
     
     symptoms =  return_symptom_list(one_line(user_input))
