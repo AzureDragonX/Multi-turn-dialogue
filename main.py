@@ -11,6 +11,7 @@ f = open("utils_main//symptom.txt", 'r')
 all_dict = eval(f.read())
 f.close()
 
+# id_symptom是症状——id对应表
 temp = pd.read_csv('id_symptom.csv')
 id_symptom = {}
 for tup in zip(temp['id'], temp['symptom']):
