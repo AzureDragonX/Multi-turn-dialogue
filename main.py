@@ -69,7 +69,6 @@ def main(inputData):
             temp.append(Validator(item))
         if 'Yes' not in temp:
             symp = Validator(inputData['disease'][0])
-            inputData['disease'][0][symp] = True
             inputData['disease'][0]['state'] = True
             cur_dia['output'] = ('Request', 'Symptom', symp)
             inputData['dialogue'][int(cur)] = cur_dia
@@ -140,6 +139,7 @@ if __name__ == "__main__":
                     'dialogue': [{'turn': '0', 'input': ('Request', 'Diagnosis', user_input), 'output': ()}],
                 }
     result = main(inputData)
+    print(result)
     while result['dialogue'][int(result['cur'])]['output'][0] != 'Inform':
         print('请问你有'+result['dialogue'][int(result['cur'])]['output'][2]+'吗？')
         user_input = input()
@@ -147,6 +147,7 @@ if __name__ == "__main__":
         result['dialogue'].append({'turn': cur, 'input': ('Inform', 'Answer', user_input), 'output': ()})
         result['cur'] = cur
         result = main(result)
+        print(result)
     if result['dialogue'][int(result['cur'])]['output'][2]:
         print('我们认为你可能患上了'+result['dialogue'][int(result['cur'])]['output'][2])
     else:
