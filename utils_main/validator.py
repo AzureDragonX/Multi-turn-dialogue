@@ -12,10 +12,10 @@ def Validator(disease_dict):
     输出： 下一个要问的症状，特殊标识：'No'代表换病，'Yes'代表确诊此病。
     '''
     # 已经确认的症状先收集起来
-    symptoms = [k for k, v in disease_dict.items() if k != 'name' and k != 'state' and v == True]
+    symptoms = [k for k, v in disease_dict.items() if k != 'name' and k != 'state' and v is True]
 
     # 已经确认不是的症状也收集起来
-    no_symptoms = [k for k, v in disease_dict.items() if k != 'name' and k != 'state' and v == False]
+    no_symptoms = [k for k, v in disease_dict.items() if k != 'name' and k != 'state' and v is False]
 
     # 拿到疾病的子表并对权值排序
     temp = dis_df.loc[dis_df['disease'] == disease_dict['name']]
