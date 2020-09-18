@@ -49,6 +49,13 @@ def main(inputData):
             wd = i[1][1]  # i的格式：(节点index, (字符串序号，字符串))
             symptoms.append(wd)
         diseases = Classifier(symptoms, sym2dis_dict)
+
+        # 若为空，则直接返回不知道
+        if not diseases:
+            cur_dia['output'] = ('Inform', 'Disease', '')
+            inputData['dialogue'][int(cur)] = cur_dia
+            return inputData
+
         inputData.update({'disease': []})
         for dis in diseases:
             temp = dis_df.loc[dis_df['disease'] == dis]
